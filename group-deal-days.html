@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="" crossorigin="anonymous">
+      <link rel="stylesheet" href="css/common.css">
+      <!-- Fav Icon -->
+      <link rel="icon" href="images/fav_icon.png" type="image/png" sizes="32x32">
+      <title>Silverback Share Deal</title>
+   </head>
+   <body>
+
+      <!--New modal starts here-->
+
+      <div id="catmodalone" class="modalbuy">
+         <div class="modal-centered">
+            <!-- Modal content -->
+            <div class="modal-content modal_sizing">
+                 <h4 class="modal-title modal_heading">Welcome to Silverback Hosts App</h4>
+                <span data-modal="catmodalone" class="closecustom">&times;</span>
+             <!--Edit starts-->
+             <div class="modal-body modal_heading">
+                  <form action="/action_page.php">
+                     <div class="form-group form_input_field">
+                      <label for="email">Enter your mobile number</label>
+                      <input type="" class="form-control mobile_input" placeholder="Mobile Number" id="mobileno">
+                     </div>
+
+                     <div class="form-group form_input_field2">
+                      <label for="pwd">Enter your Password</label>
+                      <input type="password" class="form-control input_section" placeholder="********" id="pwd">
+                      <a class="eye_icon"><img src="images/eye.png"></a>
+                      <div class="forgot_pswd">
+                      <button class="myBtn_click" data-modal="catmodaltwo">forgot password?</button>
+                      </div>
+                     </div>
+
+                   <input type="button" class="login_btn" value="LOGIN">
+                   </form>
+                   <div class="social_contact">
+								<h2>Or connect with social</h2>
+								<div class="social">
+								<a href="#" class="fb_contact"><span class="facebook"><img src="images/fb.png"></span>facebook</a>
+								<a href="#" class="google_contact"><span class="google"><img src="images/google.png"></span>google</a>
+								</div>
+								<div class="no_account">
+								<a href="#" class="myBtn_click" data-modal="catmodalsix">Don’t have an account?</a>
+								</div>
+							</div>
+             </div>
+             <!--Edit ends-->
+            </div>
+            </div>
+      </div>
+      
+
+      <div id="catmodaltwo" class="modalbuy">
+            <div class="modal-centered">
+               <!-- Modal content -->
+               <div class="modal-content modal_sizing">
+                    <h4 class="modal-title modal_heading">Forgot Password</h4>
+                   <span data-modal="catmodaltwo" class="closecustom">&times;</span>
+                <!--Edit starts-->
+                <div class="modal-body modal_heading">
+                     <form action="/action_page.php">
+                        <div class="form-group form_input_field">
+                         <label for="email">Enter your Mobile number and you will receive a OTP</label>
+                         <input type="text" class="form-control mobile_input" placeholder="Mobile Number" id="mobileno">
+                        </div>
+                     <div class="text-right">
+                        <input type="button" class="cancel-btn closecustom mr-2" value="CANCEL" data-modal="catmodaltwo">
+                        <input type="button" class="login_btn myBtn_click" value="LOGIN" data-modal="catmodalthree">
+                     </div>
+                      </form>
+                </div>
+                <!--Edit ends-->
+               </div>
+               </div>
+         </div>
+
+
+         <div id="catmodalthree" class="modalbuy">
+               <div class="modal-centered">
+                  <!-- Modal content -->
+                  <div class="modal-content modal_sizing">
+                       <h4 class="modal-title modal_heading">Forgot Password</h4>
+                      <span data-modal="catmodalthree" class="closecustom">&times;</span>
+                   <!--Edit starts-->
+                   <div class="modal-body modal_heading">
+                        <form action="/action_page.php">
+
+                           <div class="form-group form_input_field">
+                            <label for="email">We have send you an OTP on your registered mobile number</label>
+                            <p class="pb-0"><span>******</span><span class="pl-1">1234</span></p>
+                           </div>
+
+                           <div class="form-group form_input_field otp-section">
+                                 <label>Enter your OTP number</label>
+                                 <div class="otp-outer">
+                                 <input type="text" class="">
+                                 <input type="text" class="">
+                                 <input type="text" class="">
+                                 <input type="text" class="">
+                                 </div>
+                           </div>
+
+                        <div class="text-right">
+                           <input type="button" class="cancel-btn closecustom mr-2" value="CANCEL" data-modal="catmodalthree">
+                           <input type="button" class="login_btn myBtn_click" value="SUBMIT" data-modal="catmodalfour">
+                        </div>
+                         </form>
+                   </div>
+                   <!--Edit ends-->
+                  </div>
+                  </div>
+            </div>
+
+
+            <div id="catmodalfour" class="modalbuy">
+                  <div class="modal-centered">
+                     <!-- Modal content -->
+                     <div class="modal-content modal_sizing">
+                          <h4 class="modal-title modal_heading">Change Password</h4>
+                         <span data-modal="catmodalfour" class="closecustom">&times;</span>
+                      <!--Edit starts-->
+                      <div class="modal-body modal_heading">
+                           <form action="/action_page.php">
+   
+                    <div class="form-group form_input_field">
+                      <label for="email">New Password</label>
+                      <input type="text" class="form-control mobile_input" placeholder="****" id="mobileno">
+                     </div>
+                     
+                     <div class="form-group form_input_field2">
+                      <label for="pwd">Confirm Password</label>
+                      <input type="text" class="form-control mobile_input" placeholder="****" id="mobileno">
+                     </div>
+   
+                     <div class="text-right mt-4">
+                        <input type="button" class="cancel-btn closecustom mr-2" value="CANCEL" data-modal="catmodalfour">
+                        <input type="button" class="login_btn myBtn_click" value="SUBMIT" data-modal="catmodalfive">
+                     </div>
+                  </form>
+                     </div>
+                      <!--Edit ends-->
+                     </div>
+                     </div>
+               </div>
+
+
+               <div id="catmodalfive" class="modalbuy">
+                     <div class="modal-centered">
+                        <!-- Modal content -->
+                        <div class="modal-content modal_sizing">
+                            <span data-modal="catmodalfive" class="closecustom">&times;</span>
+                         <!--Edit starts-->
+                         <div class="modal-body modal_heading success-centered">
+                           <p class="success-msg">Your Password has been changed successfully</p> 
+                           <img src="images/successful.png">
+                           <div>
+                           <button class="continue_btn closecustom" data-modal="catmodalfive">CONTINUE</button>
+                           </div>
+                        </div>
+                         <!--Edit ends-->
+                        </div>
+                        </div>
+                  </div>
+
+
+                  <div id="catmodalsix" class="modalbuy">
+                        <div class="modal-centered">
+                           <!-- Modal content -->
+                           <div class="modal-content modal_sizing">
+                                <h4 class="modal-title modal_heading">Sign Up</h4>
+                               <span data-modal="catmodalsix" class="closecustom">&times;</span>
+                            <!--Edit starts-->
+                            <div class="modal-body modal_heading">
+                                 <form action="/action_page.php">
+
+                                    <div class="form-group form_input_field3">
+                                     <label for="email">First Name</label>
+                                     <input type="text" class="form-control mobile_input placeholder2" placeholder="John" id="mobileno">
+                                    </div>
+               
+                                    <div class="form-group form_input_field3">
+                                     <label for="pwd">Last Name</label>
+                                     <input type="text" class="form-control mobile_input placeholder2" placeholder="Brook" id="mobileno">
+                                    </div>
+
+                                    <div class="form-group form_input_field3">
+                                          <label for="pwd">Email</label>
+                                          <input type="email" class="form-control mobile_input placeholder2" placeholder="john@hamil.com" id="mobileno">
+                                    </div>
+
+                                    <div class="form-group form_input_field3">
+                                          <label for="pwd">Password</label>
+                                          <input type="email" class="form-control mobile_input placeholder2" placeholder="*******" id="mobileno">
+                                    </div>
+
+                                    <div class="form-group form_input_field3">
+                                          <label for="pwd">Confirm Password</label>
+                                          <input type="email" class="form-control mobile_input placeholder2" placeholder="*******" id="mobileno">
+                                    </div>
+
+                                    <div class="col-md-12 mt-3 pl-1">
+
+                                    </div>
+
+                                    <div class="text-right mb-4">
+                                          <input type="button" class="cancel-btn closecustom mr-2" value="CANCEL" data-modal="catmodalsix">
+                                          <input type="button" class="login_btn" value="LOGIN">
+                                    </div>
+
+                                  </form>
+                            </div>
+                            <!--Edit ends-->
+                           </div>
+                           </div>
+                     </div>
+      <!--New modal ends here-->
+
+
+
+
+
+      <section class="top_bar">
+         <div class="container">
+            <div class="row">
+               <a href="#" class="logo"><img src="images/logo.png" alt="Silverback"></a>
+               <div class="user_profile"><span>John Brook</span>
+			   <div class="sub_menu">
+			   <ul>
+			   <li><a href="#">User Profile</a></li>
+			   <li><a href="#">Settings</a></li>
+			   <li><a href="#">Notification</a></li>
+			   <li><a href="#">Logout</a></li>
+			   </ul>
+			   </div>
+			   
+			   </div>
+            </div>
+         </div>
+      </section>
+      <div class="container">
+         <section class="content">
+            <div class="row">
+               <div class="col-md-5">
+                  <div class="deal_thumb">
+                     <img class="img-fluid" src="images/thumb_01.png" alt="">
+                  </div>
+                  <div class="row align_center">
+                     <div class="col-md-12">
+                        <p>
+                           <input type="date" name="bday" max="3000-12-31" min="1000-01-01" class="form-control" value="mm/dd/yyyy"> 
+						 </p>
+                     </div>
+                  </div>
+                  <div class="col-md-12">
+                        <button data-modal="catmodalone" class="myBtn_click buy_new" id="catone">
+                           <span></span>
+                           Buy Now
+                        </button>		
+                  </div>
+               </div>
+               <div class="col-md-7">
+                  <h1>AJ Deal</h1>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea <a href="#">more...</a></p>
+                  <div class="badges">
+                     <span><img src="images/fire.png" alt=""> Best Deals</span>
+                     <span><img src="images/casino.png" alt=""> Casino Special</span>
+                     <span><img src="images/special_offer.png" alt=""> Special Offer</span>
+                  </div>
+                  <h2>at Vegas</h2>
+                  <div class="address_label">
+                     <div class="row">
+                        <div class="col-md-12">
+                           <p><span class="location"></span> 3799 S Las Vegas Blvd, Las Vegas, NV 89109, USA </p>
+                        </div>
+                     </div>
+                     <div class="row">
+                        <div class="col-md-12">
+                           <p><span class="capacity"></span> Capacity 666 </p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="price_col">
+                     <div class="row">
+                        <div class="col-md-5">
+                           <p> Full Price : <span>$125</span> </p>
+                        </div>
+                        <div class="col-md-5">
+                           <p> Still Owed : <span>$55</span> </p>
+                        </div>
+                     </div>
+                     <div class="deposit_price_strip">
+                        <p class="pull-left"><span class="dollor"></span> Pay deposit to Reserve Deal </p>
+                        <span class="deposit_price">$70</span>
+                     </div>
+                  </div>
+                  <div class="info">
+                     <div class="row">
+                        <div class="col-md-12">
+                           <h4 class="selected-day-title">Selected Days</h4>
+                           <div class="day-row">
+                              <div class="each-day">
+                                 <span class="day-count">M</span>
+                                 <p class="status-color">Close</p>
+                              </div>
+                              <div class="each-day">
+                                    <span class="day-count">T</span>
+                                    <p class="status-color">Close</p>
+                              </div>
+                              <div class="each-day">
+                                    <span class="day-count highlighted">W</span>
+                                    <p class="status-color">Open</p>
+                              </div>
+                              <div class="each-day">
+                                    <span class="day-count highlighted">T</span>
+                                    <p class="status-color">Open</p>
+                              </div>
+                              <div class="each-day">
+                                    <span class="day-count highlighted">F</span>
+                                    <p class="status-color">Open</p>
+                              </div>
+                              <div class="each-day">
+                                    <span class="day-count">S</span>
+                                    <p class="status-color">close</p>
+                              </div>
+                              <div class="each-day">
+                                    <span class="day-count">S</span>
+                                    <p class="status-color">close</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>                  
+                     <div class="full_Width">
+                        <p class="label">Company Category</p>
+                        <p class="label_info">Hyde Lounge</p>
+                     </div>
+                     <div class="full_Width">
+                        <p class="label">Deal Category </p>
+                        <p class="label_info">Sapphire, Spearmint Rhino, Hyde Lounge, silverbackvip, Royalty Exotic Cars,  October Specials, Category1, Crazy Horse 3, Category2, Papillion Helicopter,  Light Nightclub, Hyde Nightclub, L.A Epic, Sun Buggy, Exclipse Theatres, Drais Night club</p>
+                     </div>
+                     <div class="full_Width">
+                        <p class="label">Event Time</p>
+                        <p class="label_info">04:30pm | 04 Dec 2019</p>
+                     </div>
+                     <div class="full_Width">
+                        <p class="label">Business Hours</p>
+                        <p class="label_info">08 Hours</p>
+                     </div>
+                     <div class="h_line"></div>
+                     <div class="full_Width">
+                        <p class="label">About the company</p>
+                        <p class="label_info">Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat.</p>
+                     </div>
+                     <div class="full_Width">
+                        <p class="label">Deal Details</p>
+                        <p class="label_info">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat.</p>
+                     </div>
+                     <div class="full_Width">
+                        <p class="label">Deal Rules</p>
+                        <p class="label_info">Cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat.</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </div>
+      
+      <footer>
+         <div class="container">
+            <div class="row">
+               <div class="app_btn">
+                  <h3>Download our App</h3>
+                  <a href="#"><img src="images/android_btn.png" alt=""></a>
+                  <a href="#"><img src="images/ios_btn.png" alt=""></a>
+               </div>
+               <div class="ml-auto align_center">
+                  <h3>Visit our website</h3>
+                  <a href="#">www.silverbackhosts.com</a>
+               </div>
+            </div>
+         </div>
+      </footer>
+
+
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="js/jquery-3.4.1.min.js.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      <script src="js/app.js"></script>
+   </body>
+</html>
+
